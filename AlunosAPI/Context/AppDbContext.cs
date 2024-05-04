@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using AlunosApi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace AlunosApi.Context
 {
-    public class AppDbContext: DbContext    
+    public class AppDbContext: IdentityDbContext<IdentityUser>    
     {
 
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options)
@@ -19,6 +21,7 @@ namespace AlunosApi.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Aluno>().HasData(
                 new Aluno{
                     Id = 1,

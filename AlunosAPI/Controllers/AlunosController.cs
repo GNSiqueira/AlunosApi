@@ -1,17 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using AlunosApi.Models;
 using AlunosApi.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+
 
 namespace AlunosAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     //[Produces("application/json")]
     public class AlunosController : ControllerBase
     {
@@ -54,7 +52,7 @@ namespace AlunosAPI.Controllers
             }
         }
 
-        [HttpGet("id:int", Name ="GetAluno")]
+        [HttpGet("{id:int}", Name ="GetAluno")]
         public async Task<ActionResult<IAsyncEnumerable<Aluno>>> GetAluno([FromQuery]int id)
         {
             try
