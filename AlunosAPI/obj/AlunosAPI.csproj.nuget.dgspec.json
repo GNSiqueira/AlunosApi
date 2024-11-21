@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabrielneto/Desktop/Escola/01 - Projeto Integrador/Alunos Projeto/AlunosAPI/AlunosAPI.csproj": {}
+    "D:\\FATEC\\06 - Tecnicas Avançads de Programação\\AlunosApi\\AlunosAPI\\AlunosAPI.csproj": {}
   },
   "projects": {
-    "/home/gabrielneto/Desktop/Escola/01 - Projeto Integrador/Alunos Projeto/AlunosAPI/AlunosAPI.csproj": {
+    "D:\\FATEC\\06 - Tecnicas Avançads de Programação\\AlunosApi\\AlunosAPI\\AlunosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabrielneto/Desktop/Escola/01 - Projeto Integrador/Alunos Projeto/AlunosAPI/AlunosAPI.csproj",
+        "projectUniqueName": "D:\\FATEC\\06 - Tecnicas Avançads de Programação\\AlunosApi\\AlunosAPI\\AlunosAPI.csproj",
         "projectName": "AlunosAPI",
-        "projectPath": "/home/gabrielneto/Desktop/Escola/01 - Projeto Integrador/Alunos Projeto/AlunosAPI/AlunosAPI.csproj",
-        "packagesPath": "/home/gabrielneto/.nuget/packages/",
-        "outputPath": "/home/gabrielneto/Desktop/Escola/01 - Projeto Integrador/Alunos Projeto/AlunosAPI/obj/",
+        "projectPath": "D:\\FATEC\\06 - Tecnicas Avançads de Programação\\AlunosApi\\AlunosAPI\\AlunosAPI.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "D:\\FATEC\\06 - Tecnicas Avançads de Programação\\AlunosApi\\AlunosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/gabrielneto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
